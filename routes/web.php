@@ -14,7 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    //return view('welcome');
+    return redirect('upload');
 });
 
 Route::get('/upload', ['as' => 'upload', 'uses' => 'App\Http\Controllers\S3Controller@upload']);
